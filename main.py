@@ -1,16 +1,21 @@
-# This is a sample Python script.
+from animal import Animal
+from cat import Cat
+from dog import Dog
+from chicken import Chicken
+from human import Human
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
+def runner(animal):
+    animal.doYourThing()
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+obj_cat = Cat("Puss in Boots")
+obj_dog = Dog("Rover")
+obj_chicken = Chicken("Plucky Clucker")
+obj_human = Human("John Deere")
+
+runner(obj_cat)
+runner(obj_dog)
+runner(obj_chicken)
+runner(obj_human)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
